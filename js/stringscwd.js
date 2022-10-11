@@ -28,14 +28,15 @@
 //  console.log(friend2.trim())
 //  console.log(friend2)
  
-let strn2 = "Please give me 1000"
-let amount =  strn2.slice(15);
-console.log(amount);
+// let strn2 = "Please give me 1000"
+// let amount =  Number.parseInt(strn2.slice(15));
+// console.log(amount);
 
 
-let strn3 = "Please give me 1000"
-let amountt =  strn2.slice("Please give me ".length);
-console.log(amountt); 
+// let strn3 = "Please give me 1000"
+// let amountt =  strn2.slice("Please give me ".length);
+// console.log(amountt); 
+// console.log(typeof amountt); 
 
 
 
