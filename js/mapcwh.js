@@ -1,4 +1,4 @@
-// // console.log("jfdhg")
+    // // console.log("jfdhg")
 // let arr = [5,12,15121];
 // arr.map((value)=>{
 //     console.log(value)
