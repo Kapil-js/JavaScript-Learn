@@ -295,6 +295,37 @@
 // }
 
 
-for(let index= 0; index <=100; index = index + 2){
-    console.log("Heyyyyyy", index);
-}
+// for(let index= 0; index <=10; index = index + 2){
+//     console.log("Heyyyyyy", index);
+// }
+
+
+// let step = 0;
+// while(step <5){
+//     step+= 1
+//     if(step === 2){
+//         continue;
+//     }
+//     console.log("setp", step);
+// }
+
+// let stepp = 0;
+// do{
+//     console.log('good' , stepp);
+//     stepp += 1;
+// }while(stepp < 5)
+
+
+
+
+ 
+
+// const a = [4, 1, 6, -2, -5, 3, 2, -8, 6, 7];
+
+// const firstNeg = (num) =>{
+//     return num < 0;
+// }
+
+// const result = a.findIndex(firstNeg);
+
+// console.log(result);
