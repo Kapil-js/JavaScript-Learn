@@ -243,7 +243,7 @@
 //     if(age >= 60) {
 //         console.log("You can vote again");
 //     }
-    
+
 // }else{
 //     console.log("you cannot vote");
 //     if(age < 10) {
@@ -265,13 +265,11 @@
 //     console.log('Fail');
 // }
 
-
 // const marks = 39;
 
 // const result = (marks>= 40) ? "PASSED" : "FAILED"
 
 // console.log(result);
-
 
 // const days = 'Tuesday';
 
@@ -294,11 +292,9 @@
 //         break;
 // }
 
-
 // for(let index= 0; index <=10; index = index + 2){
 //     console.log("Heyyyyyy", index);
 // }
-
 
 // let step = 0;
 // while(step <5){
@@ -315,11 +311,6 @@
 //     stepp += 1;
 // }while(stepp < 5)
 
-
-
-
- 
-
 // const a = [4, 1, 6, -2, -5, 3, 2, -8, 6, 7];
 
 // const firstNeg = (num) =>{
@@ -328,39 +319,122 @@
 
 // const result = a.findIndex(firstNeg);
 
-// console.log(result);     
+// console.log(result);
+
+// function getChesse (callBack){
+//     setTimeout(() => {
+//         const cheese = '🧀'
+//         console.log('here this cheese', cheese );
+//         callBack(cheese)
+//     }, 2000);
+// }
+
+// function makeDough(cheese, callBack) {
+//     setTimeout(() => {
+//         const dough = cheese + '🍩'
+//         console.log('here is the dough ', dough);
+//         callBack(dough)
+//     }, 2000);
+// }
+
+// function bakePizza(dough, callBack) {
+//     setTimeout(() => {
+//         const pizza = dough + '🍕'
+//         console.log('here is the pizza ', pizza);
+//         callBack(pizza)
+//     }, 2000);
+// }
+
+// getChesse((cheese)=>{
+//     makeDough(cheese, (dough)=>{
+//        bakePizza(dough, (pizza) =>{
+//         console.log('got my pizza' , pizza);
+//        })
+//     })
+// });
+
+// const ticket = new Promise(function (resolve, reject){
+//     const isBoared = false;
+//     if(isBoared){
+//         resolve("you are not in the flight")
+//     }
+//     else{
+//         reject("your flight has been canceld")
+//     }
+// })
+
+// ticket.then((data) =>{
+//     console.log("whooo", data);
+// }).catch((data)=>{
+//     console.log("oh no", data);
+// })
+
+// function getChesse() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const cheese = "🧀";
+//       resolve(cheese);
+//     }, 2000);
+//   });
+// }
+
+// function makeDough(cheese) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const dough = cheese + "🍪";
+//       resolve(dough);
+//     }, 2000);
+//   });
+// }
+// function bakePizza(dough) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const pizza = dough + "🍕";
+//       resolve(pizza);
+//     }, 2000);
+//   });
+// }
+
+// async function orderPizza () {
+//     try{
+//         const cheese = await getChesse();
+//     console.log("here is the cheese", cheese);
+//     const dough = await makeDough(cheese);
+//     console.log("here is the dough", dough);
+//     const pizza = await bakePizza(dough);
+//     console.log("here is the pizza", pizza);
+//     }catch(err){
+//         console.log('eror', err);
+//     }
+// }
+
+// orderPizza();
 
 
 
-function getChesse (callBack){
-    setTimeout(() => {
-        const cheese = '🧀'
-        console.log('here this cheese', cheese );
-        callBack(cheese)
-    }, 2000);
-}
-
-function makeDough(cheese, callBack) {
-    setTimeout(() => {  
-        const dough = cheese + '🍩'
-        console.log('here is the dough ', dough);
-        callBack(dough)
-    }, 2000);
-}
-
-function bakePizza(dough, callBack) {
-    setTimeout(() => {  
-        const pizza = dough + '🍕'
-        console.log('here is the pizza ', pizza);
-        callBack(pizza)
-    }, 2000);
-}
 
 
-getChesse((cheese)=>{
-    makeDough(cheese, (dough)=>{
-       bakePizza(dough, (pizza) =>{
-        console.log('got my pizza' , pizza);
-       })
-    })
-});
+
+
+
+
+
+// getChesse()
+//   .then((cheese) => {
+//     console.log("here is the cheese", cheese);
+//     return makeDough(cheese);
+//   })
+//   .then((dough) => {
+//     console.log("here is the dough", dough);
+//     return bakePizza(dough);
+//   })
+//   .then((pizza) => {
+//     console.log("here is the pizza", pizza);
+//   }).catch((data) =>{
+//     console.log("error", data);
+//   })
+
+
+
+
+
