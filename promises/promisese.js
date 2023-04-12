@@ -328,4 +328,39 @@
 
 // const result = a.findIndex(firstNeg);
 
-// console.log(result);
+// console.log(result);     
+
+
+
+function getChesse (callBack){
+    setTimeout(() => {
+        const cheese = '🧀'
+        console.log('here this cheese', cheese );
+        callBack(cheese)
+    }, 2000);
+}
+
+function makeDough(cheese, callBack) {
+    setTimeout(() => {  
+        const dough = cheese + '🍩'
+        console.log('here is the dough ', dough);
+        callBack(dough)
+    }, 2000);
+}
+
+function bakePizza(dough, callBack) {
+    setTimeout(() => {  
+        const pizza = dough + '🍕'
+        console.log('here is the pizza ', pizza);
+        callBack(pizza)
+    }, 2000);
+}
+
+
+getChesse((cheese)=>{
+    makeDough(cheese, (dough)=>{
+       bakePizza(dough, (pizza) =>{
+        console.log('got my pizza' , pizza);
+       })
+    })
+});
